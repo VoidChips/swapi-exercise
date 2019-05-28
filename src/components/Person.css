@@ -1,0 +1,11 @@
+.person {
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 2rem;
+    background-color: rgb(125, 228, 85);
+}
+
+li {
+    font-size: 2rem;
+    margin: 1rem;
+}
