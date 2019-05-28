@@ -13,7 +13,7 @@ class App extends Component {
     try {
       const response = await fetch('https://swapi.co/api/people/');
       const people = await response.json();
-      this.setState({characters: people});
+      this.setState({ characters: people });
     }
     catch (err) {
       console.log('Error loading', err);
@@ -22,14 +22,16 @@ class App extends Component {
 
   render() {
     const characters = this.state.characters.results;
-    return characters === undefined ? 
-    <h1>Loading</h1> : 
-    (
-      <div className='app'>
-        <h1>Star Wars Characters</h1>
-        <People {...characters}/>
-      </div>
-    );
+    return characters === undefined ?
+      <h1>Loading</h1> :
+      (
+        <div className='app'>
+          <h1>Star Wars Characters</h1>
+          <div className='people'>
+            <People {...characters} />
+          </div>
+        </div>
+      );
   }
 }
 

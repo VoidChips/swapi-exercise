@@ -3,6 +3,7 @@
     border: 2px solid red;
     border-radius: 2rem;
     background-color: rgb(125, 228, 85);
+    padding: 1rem;
 }
 
 li {
